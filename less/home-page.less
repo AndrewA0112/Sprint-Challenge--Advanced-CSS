@@ -14,6 +14,10 @@
 
     img {
       border-radius: 8px;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
   
   }
@@ -28,6 +32,15 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile {
+        display: none;
+
+        &:first-child {
+          display: block;
+          width: 100%;
+        }
+      }
     }
   }
 
@@ -50,8 +63,20 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+      padding: 0px;
+      padding: 2%;
+      margin-top: 20px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        width: 100%;
+        padding-top: 2rem;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -63,6 +88,14 @@
 
       .btn {
         .btn-styling(black, white);
+
+        @media @mobile {
+          width: 100%;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          margin-bottom: 1rem;
+          background: #22283A;
+        }
         
         &:hover {
           .btn-styling(skyblue, black);
@@ -73,6 +106,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobile {
+        width: 100%;
+        margin-left: 0;
+      }
       
       img {
         width: 100%;

@@ -8,6 +8,10 @@
     align-items: center;
     .header-styling();
 
+    @media @mobile {
+        background: lightgray;
+    }
+
     h1 {
         font-size: 3.5rem; 
     }
@@ -15,6 +19,10 @@
     nav {
         width: 50%;
         .nav-styling();
+        
+        @media @mobile {
+            width: 90%;
+        }
 
         a {
             text-decoration: none;
