@@ -1,3 +1,14 @@
+.header-styling {
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.nav-styling {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1.5rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -239,6 +250,24 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: black;
+  color: white;
+  padding: 1rem;
+  width: 25%;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1.6rem;
+}
+.home .walk .walk-text .btn:hover {
+  background: skyblue;
+  color: black;
+  padding: 1rem;
+  width: 25%;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1.6rem;
 }
 .home .walk .walk-img {
   width: 46%;
