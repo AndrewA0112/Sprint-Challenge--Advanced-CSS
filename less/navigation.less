@@ -1,1 +1,31 @@
 // Navigation code here
+
+.nav {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: lightgray;
+    .header-styling();
+
+
+    h1 {
+        font-size: 3.5rem; 
+    }
+
+    nav {
+        width: 50%;
+        .nav-styling();
+        
+        @media @mobile {
+            width: 90%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.6rem;
+        }
+    }
+}
